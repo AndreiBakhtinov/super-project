@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Dashboard | Academy Project</title>
-
-
+    <title>Dashboard Project | Academy Project</title>
 
     <link
       rel="stylesheet"
@@ -43,9 +41,29 @@
       }
       main {
         background: white;
+        padding: 40px;
       }
       .userbar {
         background: lightgrey;
+      }
+
+      .search {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        width: 300px;
+        border-radius: 12px;
+        padding-left: 10px;
+      }
+      .search__input {
+        border: none;
+        font-size: 1rem;
+        padding: 1rem;
+      }
+      .search__input:focus {
+        outline: none;
+      }
+      .search__icon {
+        font-size: 1.5rem;
+        color: grey;
       }
     </style>
   </head>
@@ -54,7 +72,17 @@
     <div class="wrapper">
       <aside class="sidebar"></aside>
 
-      <main></main>
+      <main>
+
+        <div class="search">
+          <span class="search__icon">
+            <i class="las la-search"></i>
+          </span>
+
+          <input type="text" class="search__input" placeholder="Search">
+        </div>
+
+      </main>
 
       <div class="userbar"></div>
     </div>
